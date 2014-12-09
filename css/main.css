@@ -1,0 +1,760 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+ .container_12{
+            background: #dddddd;
+        }
+
+        header{
+            height: 130px;
+            background-color: rgba(189, 221, 145, 1);
+        }
+
+
+        .grid_3{
+            height: 100px;
+        }
+
+
+
+        .grid_4{
+            
+            height: auto;
+           
+        }
+
+        .grid_6{
+            background: transparent;
+            height: auto;
+            
+        }
+
+          
+        img{
+            margin-top: 0px;
+            height: 150px;
+        }
+
+        div h2{
+            margin: 10px;
+        }
+
+        div p{
+            margin: 10px;
+            text-align: justify;
+        }
+
+
+        .left{
+            float: left;
+        }
+
+        .right {
+          float: right;
+          
+        }
+
+        .mini-nav {
+          list-style: none;
+          margin-top: 40px;
+          padding-right: 10px;
+        }
+
+        .mini-nav li {
+            float: right;
+            margin-left: 10px;
+            background-color: rgba(54, 54, 54, 1);
+            font-size: 20px;
+            font-family: Forte;
+            border-radius: 15px;
+        }
+
+        .mini-nav li a {
+            color: white;
+            margin-left: 10px;
+            margin-right: 10px;
+          
+        }
+
+        div h1 a{
+            display: block;
+            height: 105px;
+            background-image: url(http://www.x-drink.cz/images/simpsons-logo.png);
+            background-size: 100%;
+            text-indent: -99999px;
+
+        }
+
+
+        #foto{
+            margin: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+/*form*/
+
+body{
+        background-color: #FFFACC;
+    }
+
+    header, section, img, footer{
+            margin: 10px 0;
+
+        }
+
+     .container_12{
+            background: transparent;
+        }
+
+        header{
+            height: 130px;
+            background-color: transparent;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .grid_1{
+            height: auto;
+        }
+
+        .grid_3{
+            height: auto;
+        }
+
+        
+        .grid_5{
+            height: auto;
+            background: transparent;
+        }
+
+        .grid_6{
+            background: transparent;
+            width: 460px;
+            height: auto;
+            color: white;
+            
+        }
+
+         .grid_8{
+            height: auto;
+            background-color: transparent;
+         } 
+
+
+         #texto, #hola{
+            height: 100px;
+            margin: 10px;
+         }
+
+         #cerrar img{
+            width: 50px;
+            height: auto;
+            float: right;
+         }
+
+         #close img{
+            width: 50px;
+            height: auto;
+            float: right;
+         }
+
+         #desaparece{
+            border-color: #FF4287;
+            border-style: dashed; 
+            border-width: 2px;
+            height: auto;
+            padding: 10px;
+         }
+
+         #panel{
+            background-color: #0DFFF3;
+            color: #E302DB;
+            border-style: solid; 
+            border-width: 1px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        #menunav ul{
+            margin-right: 339px;
+        }
+
+        img{
+            margin-top: 0px;
+            height: 150px;
+        }
+
+        footer{
+            height: 50px;
+            background: #FF4287;
+            color: white;
+            border-radius: 7px;
+        }
+
+        footer span{
+            padding-left: 380px;
+            padding-right: 300px;
+            font-family: 'Overlock', cursive;
+            font-weight: 400;
+        }
+
+
+        div h2{
+            margin: 10px;
+            font-family: 'Overlock', cursive;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        div p{
+            margin: 10px;
+            text-align: justify;
+            font-family: 'Overlock', cursive;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+
+        .left{
+            float: left;
+        }
+
+        .right {
+          float: right;
+          
+        }
+
+               
+        .grid_12{
+            width: 1024px;
+        }
+
+        div h1 a{
+            display: block;
+            height: 170px;
+            background-image: url(http://www.x-drink.cz/images/simpsons-logo.png);
+            background-size: 100%;
+            text-indent: -99999px;
+
+        }
+
+         div h4 a{
+            display: block;
+            height: 110px;
+            width: 150px;
+            background-image: url(http://www.x-drink.cz/images/simpsons-logo.png);
+            background-size: 100%;
+            text-indent: -99999px;
+            
+
+        }
+
+        #usuario{
+            padding-left: 140px;
+            margin-top: 20px;
+        }
+
+        #fotito{
+            width: 30%;
+            height: auto;
+            padding-left: 260px;
+        }
+
+        #foto{
+            margin: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #peque{
+            padding: 10px;
+            display: block;
+            margin-left:25px; 
+        }
+
+
+        .ancho{
+            width: 100%;
+            background: #FFBE8F;
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: auto;
+        }
+          
+        #cita p:before {
+            content: open-quote;
+            font-size: 90px;
+           font-family: 'Overlock', cursive;
+            font-weight: 900;
+            color: #241233;
+
+        }
+        #cita p:after {
+            content: close-quote;
+            font-size: 90px;
+            font-family: 'Overlock', cursive;
+            font-weight: 900;
+            color: #241233;
+        }
+        #cita p {
+          quotes: """""";
+          text-align: center;
+          font-family: 'Cinzel Decorative', cursive;
+          font-weight: 700;
+          font-size: 24px;
+          color: white;
+        }
+
+        
+        #cita span:before{
+            content: open-quote;
+        }
+        #cita span{
+            content: close-quote;
+        }
+        #cita span{
+            float: right;
+            quotes: "-" "-";
+            padding-right: 10px;
+             font-family: 'Cinzel Decorative', cursive;
+            font-weight: 400;
+            font-size: 20px;
+            color: white;
+        }
+        #cita{
+            background-color: #FFA951;
+            border-radius: 10px;
+            
+        }
+
+        #vimeo{
+            padding-bottom: 20px;
+            padding-top: 20px;
+            margin-left: 10px;
+            height: 259px;
+        }
+
+        #texto_vimeo{
+            margin-left: 10px;
+        }
+
+
+        .gradientbuttons ul{
+            padding: 3px 0;
+            margin-left: 0;
+            margin-top: 40px;
+            margin-bottom: 0;
+            font-family: 'Laila', serif;
+            font-weight: 600; 
+            list-style-type: none;
+            text-align: center; /*set to left, center, or right to align the menu as desired*/
+            float: right;
+            font-size: 18px;
+            }
+
+            .gradientbuttons li{
+            display: inline;
+            margin: 0;
+            }
+
+            .gradientbuttons li a{
+            text-decoration: none;
+            padding: 5px 7px;
+            margin-right: 5px;
+            border: 1px solid #778;
+            color: white;
+            border:1px solid gray;
+            background: #FF4287;
+            border-radius: 8px; /*w3c border radius*/
+            box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* w3c box shadow */
+            -moz-border-radius: 8px; /* mozilla border radius */
+            -moz-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* mozilla box shadow */
+            background: -moz-linear-gradient(center top,  #FF693B, # #FF693B 25%, # #FF693B 45%, # #FF693B 85%, # #FF693B); /* mozilla gradient background */
+            -webkit-border-radius: 8px; /* webkit border radius */
+            -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* webkit box shadow */
+            background: -webkit-gradient(linear, center top, center bottom, from(#FF693B), color-stop(25%, #FF693B), color-stop(45%, #FF693B), color-stop(85%, #FF693B), to(#FF693B)); /* webkit gradient background */
+            }
+
+            .gradientbuttons li a:hover{
+                color: black;
+                background-color: #E302DB;
+                border-style: outset;
+            }
+
+
+            .comentarios{
+                border-top-style: solid;
+                border-top-width: 2px;
+                border-top-color: #FF4287;
+                margin-top: 20px;
+                padding-top: 30px;
+                margin-bottom: 10px;
+                height: auto;
+
+            }
+
+
+            #publicacion{
+                padding-bottom: 20px;
+            }
+
+            #publicacion form textarea{
+
+                width: 99%;
+            }
+
+            #publicacion form input{
+                float: right;
+            }
+
+            #fotocoment{
+                width: 75px;
+                height: 100px;
+                float: right;
+            }
+            #fotomini{
+                width: 50px;
+                height: 70px;
+                float: right;
+            }
+
+            .respuesta{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top-style: solid;
+                border-top-width: 3px;
+                border-top-color: #E302DB;
+                
+            }
+
+            #blog{
+                height: auto;
+            }
+
+            #medio{
+                padding-bottom: 30px;
+            }
+
+            .coment{
+                padding-bottom: 42px;
+            }
+
+            #publicados{
+                padding-left: 162px;
+            }
+
+            .fotopost{
+                width: 100%;
+                height: auto;
+            }
+
+
+
+            /*paleta de colores: http://www.colourlovers.com/palette/3581703/Rainy_nights*/
